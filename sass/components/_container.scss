@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 30px;
+  background: #f8f8f7;
+
+  display: flex;
+  position: relative;
+
+  &::before {
+    display: block;
+    content: "";
+
+    position: absolute;
+    top: -62px;
+    right: 0;
+    width: 775px;
+    height: 962px;
+    // outline: 1px solid red;
+    background-image: url(../images/hero.png);
+    background-size: cover;
+  }
+}

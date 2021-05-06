@@ -1,0 +1,124 @@
+.homepage {
+  flex-basis: 50%;
+  padding-left: 117px;
+}
+.logo {
+  display: block;
+  margin-bottom: 80px;
+}
+
+.homepage_title {
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 1.32;
+  margin-bottom: 10px;
+}
+
+.homepage__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.45;
+  color: var(--second-text-color);
+  margin-bottom: 60px;
+}
+
+.homepage__subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.45;
+  margin-bottom: 20px;
+}
+.homepage__list {
+  display: flex;
+  margin-left: -16px;
+}
+.homepage__item {
+  margin-left: 16px;
+}
+
+.homepage__thumb {
+  position: relative;
+  width: 138px;
+  height: 198px;
+
+  border: 4px solid rgba(255, 255, 255, 0.6);
+  box-sizing: border-box;
+  border-radius: 20px;
+
+  &--purple {
+    background: #b4b7ff;
+    &::before {
+      display: block;
+      content: "";
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(../../images/voting.svg);
+    }
+  }
+  &--green {
+    background: #97eab9;
+    &::before {
+      display: block;
+      content: "";
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(../../images/breeds.svg);
+    }
+  }
+  &--yellow {
+    background: #ffd280;
+    &::before {
+      display: block;
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(../../images/search.svg);
+    }
+  }
+}
+
+.homepage__btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  width: 100%;
+  color: var(--active-color);
+  background: var(--white-color);
+  border-radius: 10px;
+  border: transparent;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: var(--hover-color);
+  }
+}
+
+.homepage__link {
+  cursor: auto;
+  &:hover .homepage__thumb,
+  &:focus .homepage__thumb {
+    border: 4px solid var(--white-color);
+  }
+}
